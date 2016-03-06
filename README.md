@@ -187,31 +187,7 @@ Classes ‘data.table’ and 'data.frame':	2880 obs. of  8 variables:
 ## Making Plots
 
 Our overall goal here is simply to examine how household energy usage
-varies over a 2-day period in February, 2007. My task is to
-reconstruct the following plots below, all of which were constructed
-using the base plotting system.
-
-### Plot 1
-
-
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
-
-
-### Plot 2
-
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
-
-
-### Plot 3
-
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
-
-
-### Plot 4
-
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
-
-
+varies over a 2-day period in February, 2007.
 
 For each plot I have :
 
