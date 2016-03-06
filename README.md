@@ -43,7 +43,7 @@ Dataset with 2.075.000 rows and 9 columns : 2.075.000 x 9 x 8 bytes = 150.000.00
 = 150.000.000 / 2^20 bytes/MB = 150 MB / 2^10 MB/GB
 = 0,150 GB
 
-I therefore need 0,15 x 2 = 0,3 GB of RAM : OK for my 8 GB RAM MacBook.
+        I therefore need 0,15 x 2 = 0,3 GB of RAM : OK for my 8 GB RAM MacBook.
 
 * As I am french, I need to change the R setting in order to get the weekdays in english
 ```
@@ -140,17 +140,17 @@ dt <- cbind(y,dt)
   at all because it uses 40 bytes to store one date.
 ```
 
-* Removes the old Date dans Time columns
+* Removes the old Date and Time columns
 ```
 clean <- subset(dt,select=-c(Date,Time))
 ```
 
-* Replace the name "y" by the name "Date/Time"
+* Replaces the name "y" by the name "Date/Time"
 ```
 setnames(clean, "y", "DateTime")
 str(clean)
 Classes ‘data.table’ and 'data.frame':	2880 obs. of  8 variables:
-  $ DateTime             : chr  "Thu" "Thu" "Thu" "Thu" ...
+  $ DateTime             : POSIXct, format: "2007-02-01 00:00:00" "2007-02-01 00:01:00" ...
   $ Global_active_power  : chr  "0.326" "0.326" "0.324" "0.324" ...
   $ Global_reactive_power: chr  "0.128" "0.130" "0.132" "0.134" ...
   $ Voltage              : chr  "243.150" "243.320" "243.510" "243.900" ...
@@ -173,7 +173,7 @@ clean$Sub_metering_3 <- as.numeric(clean$Sub_metering_3)
 
 str(clean)
 Classes ‘data.table’ and 'data.frame':	2880 obs. of  8 variables:
-  $ DateTime             : chr  "Thu" "Thu" "Thu" "Thu" ...
+  $ DateTime             : POSIXct, format: "2007-02-01 00:00:00" "2007-02-01 00:01:00" ...
   $ Global_active_power  : num  0.326 0.326 0.324 0.324 0.322 0.32 0.32 0.32 0.32 0.236 ...
   $ Global_reactive_power: num  0.128 0.13 0.132 0.134 0.13 0.126 0.126 0.126 0.128 0 ...
   $ Voltage              : num  243 243 244 244 243 ...
