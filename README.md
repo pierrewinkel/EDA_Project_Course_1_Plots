@@ -43,7 +43,7 @@ Dataset with 2.075.000 rows and 9 columns : 2.075.000 x 9 x 8 bytes = 150.000.00
 = 150.000.000 / 2^20 bytes/MB = 150 MB / 2^10 MB/GB
 = 0,150 GB
 
-        I therefore need 0,15 x 2 = 0,3 GB of RAM : OK for my 8 GB RAM MacBook.
+  I therefore need 0,15 x 2 = 0,3 GB of RAM : OK for my 8 GB RAM MacBook.
 
 * As I am french, I need to change the R setting in order to get the weekdays in english
 ```
